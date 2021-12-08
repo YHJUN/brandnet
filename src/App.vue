@@ -1,10 +1,18 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="app">
+    <router-view />
+    <Footer />
   </div>
-  <router-view/>
 </template>
+<script>
+// @ is an alias to /src
+import Footer from "@/components/Footer.vue";
+export default {
+  components: {
+    Footer,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {

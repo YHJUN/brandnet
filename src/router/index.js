@@ -1,20 +1,62 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import User from '../views/user/User.vue'
+import Home from '../views/home/Home.vue'
+import BrandClassification from '../views/brandClassification/BrandClassification.vue'
+import KnowledgeClassification from '../views/knowledgeClassification/KnowledgeClassification.vue'
+import RankList from '../views/rankList/RankList.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: "首页",
+      keepAlive: true,
+      footer: true,
+    },
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    path: '/user',
+    name: 'User',
+    component: User,
+    meta: {
+      title: "我的",
+      keepAlive: true,
+      footer: true,
+    },
+  },
+  {
+    path: '/brandClassification',
+    name: 'BrandClassification',
+    component: BrandClassification,
+    meta: {
+      title: "品牌分类",
+      keepAlive: true,
+      footer: true,
+    },
+  },
+  {
+    path: '/knowledgeClassification',
+    name: 'KnowledgeClassification',
+    component: KnowledgeClassification,
+    meta: {
+      title: "知识分类",
+      keepAlive: true,
+      footer: true,
+    },
+  },
+  {
+    path: '/rankList',
+    name: 'RankList',
+    component: RankList,
+    meta: {
+      title: "排行榜",
+      keepAlive: true,
+      footer: true,
+    },
+  },
+
 ]
 
 const router = createRouter({
