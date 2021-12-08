@@ -2,7 +2,7 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <van-button type="primary">主要按钮2</van-button>
+    <van-button type="primary">主要按钮3</van-button>
 
   </div>
 </template>
