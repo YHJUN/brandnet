@@ -52,6 +52,11 @@
             <div>
               <ul class="list flex-fs">
                 <li v-for="index in 3" :key="index">
+                  <div v-if="index == 2" class="grade ">
+                    <img src="@images/icon/king.png" alt="" />
+                  </div>
+                  <div v-if="index == 3" class="grade num">3</div>
+                  <div v-if="index == 1" class="grade num">2</div>
                   <div class="brand-logo">
                     <img src="@images/brand_logo.png" alt="" />
                   </div>
@@ -157,15 +162,7 @@
       </ul>
     </div>
     <!--排行榜-->
-    <div class="rank-list">
-      <ul>
-        <li v-for="index in 8" :key="index">
-          <div class="name">网购榜</div>
-          <div class="sub-name">网店排名</div>
-          <div class="icon"><van-icon name="bag" /></div>
-        </li>
-      </ul>
-    </div>
+    <RankList />
     <!--我的推荐-->
     <div class="recommend">
       <div class="top flex-sb">
@@ -203,6 +200,7 @@
 
 
 <script>
+import RankList from "@/components/RankList.vue";
 import { Tab, Tabs, Icon } from "vant";
 export default {
   data() {
@@ -267,6 +265,7 @@ export default {
     [Tab.name]: Tab,
     [Tabs.name]: Tabs,
     [Icon.name]: Icon,
+    RankList,
   },
   setup() {},
 };
@@ -371,12 +370,17 @@ export default {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     li {
-      overflow: hidden;
+      position: relative;
+
       &:nth-child(1) {
-        border-top-left-radius: 15px;
+        img {
+          border-top-left-radius: 15px;
+        }
       }
       &:nth-child(3) {
-        border-top-right-radius: 15px;
+        img {
+          border-top-right-radius: 15px;
+        }
       }
       &:nth-child(2) {
         position: relative;
@@ -385,6 +389,30 @@ export default {
         border-bottom: 0;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        img {
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+        }
+      }
+      .grade {
+        position: absolute;
+        width: 60px;
+        top: -55px;
+        left: 50%;
+        transform: translateX(-25px);
+        color: #fff;
+        
+        text-align: center;
+        &.num{
+          top: -30px;
+          font-size: 28px;
+          height: 40px;
+          width: 40px;
+          line-height: 40px;
+          background: #fdb815;
+          border-radius: 50%;
+          border: 3px solid #ffd686;
+        }
       }
       img {
         width: 100%;
@@ -434,34 +462,6 @@ export default {
       font-size: 28px;
       color: #000;
       margin: 10px 0;
-    }
-  }
-}
-.rank-list {
-  padding-top: 20px;
-  ul {
-    overflow: hidden;
-    li {
-      background: lightblue;
-      float: left;
-      width: 160px;
-      border-radius: 15px;
-      height: 220px;
-      color: #fff;
-      margin: 10px 0;
-      margin-left: 22px;
-      .name {
-        padding-top: 20px;
-        padding-bottom: 10px;
-        font-weight: bold;
-        font-size: 36px;
-      }
-      .sub-name {
-        font-size: 32px;
-      }
-      .icon {
-        font-size: 80px;
-      }
     }
   }
 }
