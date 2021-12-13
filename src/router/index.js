@@ -4,6 +4,7 @@ import Home from '../views/home/Home.vue'
 import BrandClassification from '../views/brandClassification/BrandClassification.vue'
 import KnowledgeClassification from '../views/knowledgeClassification/KnowledgeClassification.vue'
 import RankList from '../views/rankList/RankList.vue'
+import Search from '../views/search/Search.vue'
 
 const routes = [
   {
@@ -46,6 +47,7 @@ const routes = [
       footer: true,
     },
   },
+  
   {
     path: '/rankList',
     name: 'RankList',
@@ -56,7 +58,17 @@ const routes = [
       footer: true,
     },
   },
-
+  
+  {
+    path: '/search',
+    name: 'Search',
+    component: Search,
+    meta: {
+      title: "搜索",
+      keepAlive: true,
+      footer: true,
+    },
+  },
 ]
 
 const router = createRouter({
