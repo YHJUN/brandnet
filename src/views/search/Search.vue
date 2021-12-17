@@ -12,7 +12,7 @@
           <input type="text" placeholder="搜行业或品牌(综合搜索)" />
         </div>
       </div>
-      <div class="search-btn"><van-icon name="search" /></div>
+      <div class="search-btn"><van-icon name="search" /></div> 
     </div>
     <div class="search-history">
       <div class="bar flex-sb">

@@ -16,7 +16,7 @@
 
 <script>
 import { Icon } from "vant";
-export default {
+export default { 
   components: {
     [Icon.name]: Icon,
   },

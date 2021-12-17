@@ -20,10 +20,12 @@
         </van-tabs>
       </div>
       <!--搜索条-->
-      <div class="search flex-fs">
+
+      <router-link to="/search" class="search flex-fs">
         <div class="icon"><van-icon color="#666" name="search" /></div>
         搜品牌 搜行业 搜企业 搜知识 搜省市
-      </div>
+      </router-link>
+
       <!--banner-->
       <div class="banner">
         <img src="@images/h_banner.png" alt="" />
@@ -52,7 +54,7 @@
             <div>
               <ul class="list flex-fs">
                 <li v-for="index in 3" :key="index">
-                  <div v-if="index == 2" class="grade ">
+                  <div v-if="index == 2" class="grade">
                     <img src="@images/icon/king.png" alt="" />
                   </div>
                   <div v-if="index == 3" class="grade num">3</div>
@@ -173,34 +175,15 @@
           <van-icon class="icon" name="chart-trending-o" /> 更多排行榜
         </div>
       </div>
-      <div class="list">
-        <ul>
-          <li v-for="index in 10" :key="index">
-            <div class="content">
-              <div class="title">
-                中国十大排名 中国最著名盘点 那种可能成为中国国画
-              </div>
-              <div class="info flex-sb">
-                <div class="label">
-                  <span class="original">原创</span>
-                  <span>财务</span>
-                </div>
-                <div class="view"><van-icon name="eye-o" /> 5w</div>
-              </div>
-            </div>
-            <div class="img flex-m">
-              <img src="@images/nimg.png" alt="" />
-            </div>
-          </li>
-        </ul>
-      </div>
+      <ImgDesList />
     </div>
-  </div>
+  </div> 
 </template>
 
 
 <script>
 import RankList from "@/components/RankList.vue";
+import ImgDesList from "@/components/ImgDesList.vue";
 import { Tab, Tabs, Icon } from "vant";
 export default {
   data() {
@@ -266,6 +249,7 @@ export default {
     [Tabs.name]: Tabs,
     [Icon.name]: Icon,
     RankList,
+    ImgDesList,
   },
   setup() {},
 };
@@ -401,9 +385,9 @@ export default {
         left: 50%;
         transform: translateX(-25px);
         color: #fff;
-        
+
         text-align: center;
-        &.num{
+        &.num {
           top: -30px;
           font-size: 28px;
           height: 40px;
@@ -476,55 +460,6 @@ export default {
       font-size: 40px;
     }
   }
-  ul {
-    li {
-      overflow: hidden;
-      padding: 20px;
-      border-bottom: 1px solid #eee;
-      .content {
-        float: left;
-        width: 440px;
-        .title {
-          font-size: 32px;
-          text-align: left;
-          margin-bottom: 20px;
-          padding-top: 5px;
-          word-break: break-all;
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-        .info {
-          span {
-            display: inline-block;
-            margin-right: 10px;
-            border: 1px solid #eee;
-            padding: 5px;
-            color: #999;
-            font-size: 24px;
-          }
-          .original {
-            border: 0;
-            color: #484b9b;
-            background: #e7e7f3;
-          }
-        }
-        .view {
-          font-size: 24px;
-          color: #999;
-        }
-      }
-      .img {
-        float: right;
-        width: 255px;
-        overflow: hidden;
-        height: 160px;
-        img {
-          width: 100%;
-        }
-      }
-    }
-  }
+
 }
 </style>

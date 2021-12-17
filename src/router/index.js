@@ -5,6 +5,7 @@ import BrandClassification from '../views/brandClassification/BrandClassificatio
 import KnowledgeClassification from '../views/knowledgeClassification/KnowledgeClassification.vue'
 import RankList from '../views/rankList/RankList.vue'
 import Search from '../views/search/Search.vue'
+import Knowledge from '../views/knowledge/Knowledge.vue'
 
 const routes = [
   {
@@ -66,7 +67,17 @@ const routes = [
     meta: {
       title: "搜索",
       keepAlive: true,
-      footer: true,
+      footer: false,
+    },
+  },
+  {
+    path: '/knowledge',
+    name: 'Knowledge', 
+    component: Knowledge,
+    meta: {
+      title: "知识", 
+      keepAlive: true,
+      footer: false,
     },
   },
 ]
