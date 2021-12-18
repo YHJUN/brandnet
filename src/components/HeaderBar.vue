@@ -2,8 +2,8 @@
   <div class="header-bar">
     <div class="topbar flex-sb">
       <div class="flex-fs">
-        <van-icon class="icon" name="arrow-left" />
-        <div class="htitle">知识大学堂</div>
+        <van-icon class="icon" name="arrow-left" /> 
+        <div class="htitle">{{headerData.title}}</div>
       </div>
       <div class="flex-fs">
         <van-icon class="icon" name="search" />
@@ -11,45 +11,47 @@
         <van-icon class="icon" name="bars" />
       </div>
     </div>
-    <!--顶部logo-->
+    <!--顶部logo--> 
     <div class="navbar">
-      <van-tabs class="home-navbar-tabs">
+      <van-tabs class="home-navbar-tabs" :active="headerData.active">
         <van-tab
           v-for="(item, index) in navbar"
           :title="item.name"
           :key="index"
+          :url="item.url"
         >
         </van-tab>
       </van-tabs>
-    </div>
+    </div> 
   </div>
 </template>
 
 <script>
 import { Tab, Tabs, Icon } from "vant";
 export default {
+  props: ['headerData'],
   data() {
     return {
       navbar: [
         {
           name: "首页",
-          url: "",
+          url: "/",
         },
         {
           name: "知识",
-          url: "",
+          url: "/knowledge",
         },
         {
           name: "网店",
           url: "",
         },
         {
-          name: "产品",
+          name: "产品", 
           url: "",
         },
         {
           name: "品牌招商",
-          url: "",
+          url: "/brandMerchants",
         },
         {
           name: "投票",

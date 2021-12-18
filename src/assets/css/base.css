@@ -39,6 +39,13 @@
     height: 50px;
 
 }
+.bt20bg{
+    border-top: 20px solid #f4f4f4;
+}
+
+.orange{
+    color:#ff731c
+}
 
 .clearf{
     overflow: hidden;

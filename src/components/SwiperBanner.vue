@@ -1,18 +1,15 @@
 <template>
   <section class="swiper-banner">
-    <van-swipe class="my-swipe" :show-indicators=false  >
-      <van-swipe-item>
+    <van-swipe class="my-swipe" :show-indicators="false">
+      <van-swipe-item v-for="index in 2" :key="index">
         <div class="img">
           <img src="@assets/images/nimg.png" alt="" />
         </div>
-        <div class="text">各地贯彻十九届六中全会精神纪实各地贯彻十九届六中全会精神纪实各地贯彻十九届六中全会精神纪实</div>
-      </van-swipe-item>
-      <van-swipe-item>
-        <div class="img">
-          <img src="@assets/images/nimg.png" alt="" />
+        <div class="text" v-if="swiperBannerData.textTrue">
+          各地贯彻十九届六中全会精神纪实各地贯彻十九届六中全会精神纪实各地贯彻十九届六中全会精神纪实
         </div>
-        <div class="text">各地贯彻十九届六中全会精神纪实各地贯彻十九届六中全会精神纪实各地贯彻十九届六中全会精神纪实</div>
       </van-swipe-item>
+      \
     </van-swipe>
   </section>
 </template>
@@ -20,9 +17,10 @@
 <script>
 import { Swipe, SwipeItem } from "vant";
 export default {
+  props: ["swiperBannerData"],
   components: {
     [Swipe.name]: Swipe,
-    [SwipeItem.name]: SwipeItem, 
+    [SwipeItem.name]: SwipeItem,
   },
   setup() {},
 };

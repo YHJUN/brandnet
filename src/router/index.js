@@ -6,7 +6,8 @@ import KnowledgeClassification from '../views/knowledgeClassification/KnowledgeC
 import RankList from '../views/rankList/RankList.vue'
 import Search from '../views/search/Search.vue'
 import Knowledge from '../views/knowledge/Knowledge.vue'
-
+import BrandMerchants from '../views/brandMerchants/BrandMerchants.vue'
+ 
 const routes = [
   {
     path: '/',
@@ -74,6 +75,16 @@ const routes = [
     path: '/knowledge',
     name: 'Knowledge', 
     component: Knowledge,
+    meta: {
+      title: "知识", 
+      keepAlive: true,
+      footer: false,
+    },
+  },
+  {
+    path: '/brandMerchants',
+    name: 'BrandMerchants', 
+    component: BrandMerchants,
     meta: {
       title: "知识", 
       keepAlive: true,

@@ -1,8 +1,18 @@
 <template>
   <div class="knowledge">
-    <HeaderBar />
-    <SwiperBanner />
-    <SwiperMallNav />
+    <HeaderBar
+      :header-data="{
+        title: '知识',
+        active: 1,
+      }"
+    />
+    <SwiperBanner
+      :swiperBanner-data="{
+        data: {},
+        textTrue: true, 
+      }"
+    />
+    <SwiperMallNav  />
     <!--知识体系-->
     <div class="bt20 zhishitixi">
       <div class="title"><span>知识体系</span></div>
@@ -51,8 +61,6 @@
     <div class="bt20 clearf">
       <List2 />
       <List2 />
-    </div>
-    <div class="bt20 clearf">
       <List2 />
       <List2 />
     </div>

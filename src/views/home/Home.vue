@@ -15,6 +15,7 @@
             v-for="(item, index) in navbar"
             :title="item.name"
             :key="index"
+            :url="item.url"
           >
           </van-tab>
         </van-tabs>
@@ -191,11 +192,11 @@ export default {
       navbar: [
         {
           name: "首页",
-          url: "",
+          url: "/",
         },
         {
           name: "知识",
-          url: "",
+          url: "/knowledge",
         },
         {
           name: "网店",
@@ -207,7 +208,7 @@ export default {
         },
         {
           name: "品牌招商",
-          url: "",
+          url: "/brandMerchants",
         },
         {
           name: "投票",
