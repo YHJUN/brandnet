@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+div,p,a,ul,li{
+    font-size: 28px;
+}
+.itembox{
+    margin:30px 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
 .home-navbar-tabs .van-tabs__nav--line {
     background: none !important;
 }
@@ -37,7 +45,7 @@
 .select-type .van-dropdown-menu__bar {
 
     height: 50px;
-
+ 
 }
 .bt20bg{
     border-top: 20px solid #f4f4f4;
@@ -49,6 +57,15 @@
 
 .clearf{
     overflow: hidden;
+}
+.clear{
+    clear: both;
+}
+
+.ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .flex-sb {
@@ -81,4 +98,19 @@ img {
 
 .pb100 {
     padding-bottom: 100px;
+}
+.c333{
+    color: #333;
+}
+.c666{
+    color: #666;
+}
+.c999{
+    color:#999;
+}
+.cf{
+    color: #fff;
+}
+.c000{
+    color: #000;
 }

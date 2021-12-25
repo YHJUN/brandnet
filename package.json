@@ -12,6 +12,7 @@
     "vant": "^3.3.6",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
+    "vue-seamless-scroll": "^1.1.23",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
