@@ -75,16 +75,6 @@ export default {
       }
     }
   }
-  .more-btn {
-    margin: 20px auto;
-    color: #333;
-    font-size: 28px;
-    height: 65px;
-    width: 300px;
-    border-radius: 50px;
-    text-align: center;
-    line-height: 65px;
-    background: #fedc00;
-  }
+
 }
 </style>
