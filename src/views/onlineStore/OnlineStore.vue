@@ -75,9 +75,11 @@
 
     <!--主题推荐-->
     <div class="bt20 recommend">
-      <div class="title flex-sb">
-        主题推荐
-        <div class="more">更多 <van-icon name="arrow" /></div>
+      <div class="title-1">
+        <div class="title flex-sb">
+          主题推荐
+          <div class="more">更多 <van-icon name="arrow" /></div>
+        </div>
       </div>
       <div class="category1">
         <ul>
@@ -115,9 +117,11 @@
     </div>
     <!--网购品牌-->
     <div class="bt20 online-brand">
-      <div class="title flex-sb">
-        主题推荐
-        <div class="more">更多 <van-icon name="arrow" /></div>
+      <div class="title-1">
+        <div class="title flex-sb">
+          主题推荐
+          <div class="more">更多 <van-icon name="arrow" /></div>
+        </div>
       </div>
       <div class="tabmenubox-more tabmenubox">
         <div class="current">购物中心</div>
@@ -160,13 +164,13 @@
           </li>
         </ul>
       </div>
-        <div class="more-btn"><van-icon name="more-o" /> 换一批</div>
+      <div class="more-btn"><van-icon name="more-o" /> 换一批</div>
     </div>
     <!--行业榜-->
     <div class="bt20 hangyebang">
       <SectionTitle :data="{ title: '精选网店主题榜' }" />
       <van-tabs v-model:active="active" :before-change="beforeChange">
-        <van-tab title="精彩推荐"> 
+        <van-tab title="精彩推荐">
           <ImgDesList />
         </van-tab>
         <van-tab title="网购榜">
@@ -221,37 +225,7 @@ export default {
       }
     }
   }
-  .articlescroll {
-    padding-top: 20px;
-    border-top: 1px solid #eee;
-    margin: 30px 0;
-    height: 100px;
-    .left {
-      float: left;
-      img {
-        width: 60px;
-        height: 65px;
-      }
-    }
-    .itemscroll {
-      float: left;
-      font-size: 32px;
-      height: 80px;
-      width: 480px;
-      overflow-x: auto;
-      ul {
-        li {
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-        }
-      }
-    }
-    .right {
-      font-size: 28px;
-      float: right;
-    }
-  }
+
   .webshoptemai-big {
     ul {
       overflow: hidden;
@@ -320,19 +294,7 @@ export default {
       }
     }
   }
-  .online-brand,
-  .recommend {
-    .title {
-      padding: 25px 20px;
-      color: #be0f1b;
-      font-size: 38px;
-      font-weight: bold;
-      .more {
-        font-size: 28px;
-        font-weight: 500;
-      }
-    }
-  }
+
   .recommend {
     .category1 {
       ul {

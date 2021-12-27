@@ -47,7 +47,7 @@ export default {
         },
         {
           name: "产品", 
-          url: "",
+          url: "/product",
         },
         {
           name: "品牌招商",

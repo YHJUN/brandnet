@@ -165,3 +165,71 @@ img {
     width: auto;
     padding: 0 20px;
   }
+  .title-1 .title{
+    padding: 25px 20px;
+    color: #be0f1b;
+    font-size: 38px;
+    font-weight: bold;
+  }
+  .title-1 .title .more {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .navlist {
+    padding-bottom: 40px;
+    overflow: hidden;
+  }
+
+  .navlist ul li {
+    float: left;
+    width: 25%;
+  }
+  .navlist ul li .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 5px auto;
+
+  }
+  .navlist ul li .icon img {
+    width: 100%;
+  }
+
+  .articlescroll {
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    margin: 30px 0;
+    height: 100px;
+
+  }
+  .articlescroll .left {
+    float: left;
+
+  }
+  .articlescroll .left img {
+    width: 60px;
+    height: 65px;
+  }
+  .articlescroll .itemscroll {
+    float: left;
+    font-size: 32px;
+    height: 80px;
+    width: 480px;
+    overflow-x: auto;
+
+  }
+
+  .articlescroll .itemscroll li {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  
+  .articlescroll .right {
+    font-size: 28px;
+    float: right;
+  }
+  .blockinfo{
+      padding: 0 30px;
+  }

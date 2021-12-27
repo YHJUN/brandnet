@@ -8,6 +8,7 @@ import Search from '../views/search/Search.vue'
 import Knowledge from '../views/knowledge/Knowledge.vue'
 import BrandMerchants from '../views/brandMerchants/BrandMerchants.vue' 
 import OnlineStore from '../views/onlineStore/OnlineStore.vue'
+import Product from '../views/product/Product.vue'
  
 const routes = [
   {
@@ -87,7 +88,7 @@ const routes = [
     name: 'BrandMerchants', 
     component: BrandMerchants,
     meta: {
-      title: "知识", 
+      title: "品牌招商", 
       keepAlive: true,
       footer: false,
     },
@@ -98,6 +99,16 @@ const routes = [
     component: OnlineStore,
     meta: {
       title: "网店", 
+      keepAlive: true,
+      footer: false,
+    },
+  },
+  {
+    path: '/product',
+    name: 'Product', 
+    component: Product,
+    meta: {
+      title: "产品", 
       keepAlive: true,
       footer: false,
     },
