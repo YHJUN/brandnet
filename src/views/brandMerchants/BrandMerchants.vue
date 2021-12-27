@@ -534,33 +534,7 @@ export default {
   }
 }
 .section {
-  .tabmenubox {
-    margin-bottom: 20px;
-    div {
-      width: 47%;
-      height: 66px;
-      line-height: 66px;
-      text-align: center;
-      border-radius: 50px;
-      border: 1px solid #eee;
-      color: #be0f1b;
-      margin: 1%;
-      display: inline-block;
-    }
-    .current {
-      background: #be0f1b;
-      color: #fff;
-      border-color: #be0f1b;
-    }
-  }
-  .tabmenubox-more {
-    overflow-y: auto;
-    white-space: nowrap;
-    div {
-      width: auto;
-      padding: 0 20px;
-    }
-  }
+
   .tabcontent {
     ul {
       overflow: hidden;

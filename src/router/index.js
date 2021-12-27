@@ -6,7 +6,8 @@ import KnowledgeClassification from '../views/knowledgeClassification/KnowledgeC
 import RankList from '../views/rankList/RankList.vue'
 import Search from '../views/search/Search.vue'
 import Knowledge from '../views/knowledge/Knowledge.vue'
-import BrandMerchants from '../views/brandMerchants/BrandMerchants.vue'
+import BrandMerchants from '../views/brandMerchants/BrandMerchants.vue' 
+import OnlineStore from '../views/onlineStore/OnlineStore.vue'
  
 const routes = [
   {
@@ -87,6 +88,16 @@ const routes = [
     component: BrandMerchants,
     meta: {
       title: "知识", 
+      keepAlive: true,
+      footer: false,
+    },
+  },
+  {
+    path: '/onlineStore',
+    name: 'OnlineStore', 
+    component: OnlineStore,
+    meta: {
+      title: "网店", 
       keepAlive: true,
       footer: false,
     },
