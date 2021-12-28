@@ -6,14 +6,8 @@
         active: 3,
       }"
     />
-    <div class="navlist">
-      <ul>
-        <li v-for="(item, index) in navlist" :key="index">
-          <div class="icon"><img src="@assets/images/icon.png" alt="" /></div>
-          <div class="text">{{ item.name }}</div>
-        </li>
-      </ul>
-    </div>
+    <Navlist :data="{ col: 4, list: 8 }" />
+
     <div class="articlescroll flex-sa">
       <div class="left">
         <img src="@assets/images/xuangoubg.png" alt="" />
@@ -198,6 +192,7 @@ import SwiperMallNav from "@/components/SwiperMallNav.vue";
 import SectionTitle from "@/components/SectionTitle.vue";
 import { Tab, Tabs, Icon } from "vant";
 import ImgDesList from "@/components/ImgDesList.vue";
+import Navlist from "@/components/Navlist.vue";
 
 export default {
   components: {
@@ -206,6 +201,7 @@ export default {
     SwiperMallNav,
     SectionTitle,
     ImgDesList,
+    Navlist,
 
     [Tab.name]: Tab,
     [Icon.name]: Icon,
@@ -255,25 +251,6 @@ export default {
 
 <style lang="scss" scoped>
 .product {
-  .navlist {
-    padding-bottom: 40px;
-    ul {
-      overflow: hidden;
-      li {
-        float: left;
-        width: 25%;
-        .icon {
-          width: 100px;
-          height: 100px;
-          border-radius: 50%;
-          margin: 5px auto;
-          img {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
   .product-active {
     ul {
       padding-bottom: 20px;

@@ -9,7 +9,11 @@ import Knowledge from '../views/knowledge/Knowledge.vue'
 import BrandMerchants from '../views/brandMerchants/BrandMerchants.vue' 
 import OnlineStore from '../views/onlineStore/OnlineStore.vue'
 import Product from '../views/product/Product.vue'
-import Vote from '../views/vote/Vote.vue'
+import Vote from '../views/vote/Vote.vue' 
+import Encyclopedias from '../views/encyclopedias/Encyclopedias.vue' 
+import Focus from '../views/focus/Focus.vue' 
+import Celebrity from '../views/celebrity/Celebrity.vue' 
+import Network from '../views/network/Network.vue' 
  
 const routes = [
   {
@@ -105,7 +109,7 @@ const routes = [
     },
   },
   {
-    path: '/product',
+    path: '/product', 
     name: 'Product', 
     component: Product,
     meta: {
@@ -120,6 +124,46 @@ const routes = [
     component: Vote,
     meta: {
       title: "投票", 
+      keepAlive: true,
+      footer: false,
+    },
+  },
+  {
+    path: '/encyclopedias',
+    name: 'Encyclopedias', 
+    component: Encyclopedias,
+    meta: {
+      title: "百科", 
+      keepAlive: true,
+      footer: false,
+    },
+  },
+  {
+    path: '/focus',
+    name: 'Focus', 
+    component: Focus,
+    meta: {
+      title: "聚焦", 
+      keepAlive: true,
+      footer: false,
+    },
+  },
+  {
+    path: '/celebrity',
+    name: 'Celebrity', 
+    component: Celebrity,
+    meta: {
+      title: "名人", 
+      keepAlive: true,
+      footer: false,
+    },
+  },
+  {
+    path: '/network',
+    name: 'Network', 
+    component: Network,
+    meta: {
+      title: "网点名人", 
       keepAlive: true,
       footer: false,
     },

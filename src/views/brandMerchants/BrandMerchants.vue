@@ -12,7 +12,7 @@
         textTrue: false,
       }"
     />
-    <SwiperMallNav />
+    <SwiperMallNav :data="{ row: 2, col: 5, list: 16 }" />
     <div class="bt20bg">
       <div class="jiamengruzhu">
         <div class="item">
@@ -257,7 +257,7 @@
     <!---->
 
     <div class="bt20 section">
-      <SwiperMallNav />
+      <SwiperMallNav :data="{ row: 2, col: 5, list: 16 }" />
     </div>
     <!--项目招商推荐-->
     <div class="bt20 section zhaoshangtuijian">
@@ -534,7 +534,6 @@ export default {
   }
 }
 .section {
-
   .tabcontent {
     ul {
       overflow: hidden;
@@ -629,9 +628,8 @@ export default {
         float: left;
         width: 300px;
         overflow: hidden;
-        img{
+        img {
           width: 100%;
-          
         }
       }
       .right {
@@ -640,29 +638,26 @@ export default {
         color: #ccc;
         width: 370px;
         text-align: left;
-        .title{
+        .title {
           color: #333;
           margin-bottom: 5px;
-          span{
+          span {
             border-radius: 5px;
             background: #eee;
             color: #fff;
             padding: 5px 15px;
-            margin-right:10px;
+            margin-right: 10px;
             display: inline-block;
-            
           }
         }
-        .check{
+        .check {
           background: #fe741c;
           color: #fff;
           text-align: center;
           height: 50px;
           margin-top: 5px;
           line-height: 50px;
-          
         }
-        
       }
     }
   }

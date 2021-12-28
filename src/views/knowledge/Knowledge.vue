@@ -11,8 +11,8 @@
         data: {},
         textTrue: true,
       }"
-    />
-    <SwiperMallNav />
+    />  
+    <SwiperMallNav :data="{row:2,col:5,list:16}" /> 
     <!--知识体系-->
     <div class="bt20 zhishitixi">
       <SectionTitle :data="{ title: '知识体系' }" />

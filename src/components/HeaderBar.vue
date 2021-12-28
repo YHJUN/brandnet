@@ -59,7 +59,7 @@ export default {
         },
         {
           name: "聚焦",
-          url: "",
+          url: "/focus",
         },
         {
           name: "展会",
@@ -67,7 +67,7 @@ export default {
         },
         {
           name: "名人",
-          url: "",
+          url: "/celebrity",
         },
         {
           name: "趣闻",
@@ -75,7 +75,7 @@ export default {
         },
         {
           name: "网点",
-          url: "",
+          url: "/network",
         },
         {
           name: "美图",
@@ -83,7 +83,7 @@ export default {
         },
         {
           name: "百科",
-          url: "",
+          url: "/encyclopedias",
         },
       ],
     };
