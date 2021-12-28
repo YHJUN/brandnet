@@ -55,7 +55,7 @@ export default {
         },
         {
           name: "投票",
-          url: "",
+          url: "/vote",
         },
         {
           name: "聚焦",

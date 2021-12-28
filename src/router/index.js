@@ -9,6 +9,7 @@ import Knowledge from '../views/knowledge/Knowledge.vue'
 import BrandMerchants from '../views/brandMerchants/BrandMerchants.vue' 
 import OnlineStore from '../views/onlineStore/OnlineStore.vue'
 import Product from '../views/product/Product.vue'
+import Vote from '../views/vote/Vote.vue'
  
 const routes = [
   {
@@ -109,6 +110,16 @@ const routes = [
     component: Product,
     meta: {
       title: "产品", 
+      keepAlive: true,
+      footer: false,
+    },
+  },
+  {
+    path: '/vote',
+    name: 'Vote', 
+    component: Vote,
+    meta: {
+      title: "投票", 
       keepAlive: true,
       footer: false,
     },
