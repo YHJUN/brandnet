@@ -6,15 +6,17 @@ import KnowledgeClassification from '../views/knowledgeClassification/KnowledgeC
 import RankList from '../views/rankList/RankList.vue'
 import Search from '../views/search/Search.vue'
 import Knowledge from '../views/knowledge/Knowledge.vue'
-import BrandMerchants from '../views/brandMerchants/BrandMerchants.vue' 
+import BrandMerchants from '../views/brandMerchants/BrandMerchants.vue'
 import OnlineStore from '../views/onlineStore/OnlineStore.vue'
 import Product from '../views/product/Product.vue'
-import Vote from '../views/vote/Vote.vue' 
-import Encyclopedias from '../views/encyclopedias/Encyclopedias.vue' 
-import Focus from '../views/focus/Focus.vue' 
-import Celebrity from '../views/celebrity/Celebrity.vue' 
-import Network from '../views/network/Network.vue' 
- 
+import Vote from '../views/vote/Vote.vue'
+import Encyclopedias from '../views/encyclopedias/Encyclopedias.vue'
+import Focus from '../views/focus/Focus.vue'
+import Celebrity from '../views/celebrity/Celebrity.vue'
+import Network from '../views/network/Network.vue'
+import Anecdote from '../views/anecdote/Anecdote.vue'
+import Exhibition from '../views/exhibition/Exhibition.vue'
+
 const routes = [
   {
     path: '/',
@@ -56,7 +58,7 @@ const routes = [
       footer: true,
     },
   },
-  
+
   {
     path: '/rankList',
     name: 'RankList',
@@ -67,7 +69,7 @@ const routes = [
       footer: true,
     },
   },
-  
+
   {
     path: '/search',
     name: 'Search',
@@ -80,90 +82,110 @@ const routes = [
   },
   {
     path: '/knowledge',
-    name: 'Knowledge', 
+    name: 'Knowledge',
     component: Knowledge,
     meta: {
-      title: "知识", 
+      title: "知识",
       keepAlive: true,
       footer: false,
     },
   },
   {
     path: '/brandMerchants',
-    name: 'BrandMerchants', 
+    name: 'BrandMerchants',
     component: BrandMerchants,
     meta: {
-      title: "品牌招商", 
+      title: "品牌招商",
       keepAlive: true,
       footer: false,
     },
   },
   {
     path: '/onlineStore',
-    name: 'OnlineStore', 
+    name: 'OnlineStore',
     component: OnlineStore,
     meta: {
-      title: "网店", 
+      title: "网店",
       keepAlive: true,
       footer: false,
     },
   },
   {
-    path: '/product', 
-    name: 'Product', 
+    path: '/product',
+    name: 'Product',
     component: Product,
     meta: {
-      title: "产品", 
+      title: "产品",
       keepAlive: true,
       footer: false,
     },
   },
   {
     path: '/vote',
-    name: 'Vote', 
+    name: 'Vote',
     component: Vote,
     meta: {
-      title: "投票", 
+      title: "投票",
       keepAlive: true,
       footer: false,
     },
   },
   {
     path: '/encyclopedias',
-    name: 'Encyclopedias', 
+    name: 'Encyclopedias',
     component: Encyclopedias,
     meta: {
-      title: "百科", 
+      title: "百科",
       keepAlive: true,
       footer: false,
     },
   },
   {
     path: '/focus',
-    name: 'Focus', 
+    name: 'Focus',
     component: Focus,
     meta: {
-      title: "聚焦", 
+      title: "聚焦",
       keepAlive: true,
       footer: false,
     },
   },
   {
     path: '/celebrity',
-    name: 'Celebrity', 
+    name: 'Celebrity',
     component: Celebrity,
     meta: {
-      title: "名人", 
+      title: "名人",
       keepAlive: true,
       footer: false,
     },
   },
   {
     path: '/network',
-    name: 'Network', 
+    name: 'Network',
     component: Network,
     meta: {
-      title: "网点名人", 
+      title: "网点名人",
+      keepAlive: true,
+      footer: false,
+    },
+  },
+  {
+    path: '/anecdote',
+    name: 'Anecdote',
+    component: Anecdote,
+    meta: {
+      title: "趣闻",
+      keepAlive: true,
+      footer: false,
+    },
+  },
+  {
+    path: '/exhibition',
+    name: 'Exhibition',
+    component: Exhibition,
+    meta: {
+      title: "展会",
       keepAlive: true,
       footer: false,
     },

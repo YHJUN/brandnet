@@ -63,7 +63,7 @@ export default {
         },
         {
           name: "展会",
-          url: "",
+          url: "/exhibition",
         },
         {
           name: "名人",
@@ -71,7 +71,7 @@ export default {
         },
         {
           name: "趣闻",
-          url: "",
+          url: "/anecdote",
         },
         {
           name: "网点",
