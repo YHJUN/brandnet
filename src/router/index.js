@@ -16,6 +16,7 @@ import Celebrity from '../views/celebrity/Celebrity.vue'
 import Network from '../views/network/Network.vue'
 import Anecdote from '../views/anecdote/Anecdote.vue'
 import Exhibition from '../views/exhibition/Exhibition.vue'
+import Gallery from '../views/gallery/Gallery.vue'
 
 const routes = [
   {
@@ -186,6 +187,16 @@ const routes = [
     component: Exhibition,
     meta: {
       title: "展会",
+      keepAlive: true,
+      footer: false,
+    },
+  },
+  {
+    path: '/gallery',
+    name: 'Gallery',
+    component: Gallery,
+    meta: {
+      title: "图库",
       keepAlive: true,
       footer: false,
     },

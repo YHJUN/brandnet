@@ -79,7 +79,7 @@ export default {
         },
         {
           name: "美图",
-          url: "",
+          url: "/gallery",
         },
         {
           name: "百科",
