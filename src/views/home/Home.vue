@@ -8,6 +8,7 @@
           <van-icon color="#fff" class="icon" name="bars" />
         </div>
       </div>
+       
       <!--顶部logo-->
       <div class="navbar">
         <van-tabs class="home-navbar-tabs">
